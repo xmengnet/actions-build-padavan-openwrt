@@ -5,6 +5,8 @@
 # start
 name: Padavan CI PSG1218
 on:
+  watch:                              # 监视操作
+    types: [started]                  # 点击 star 之后
   # schedule:                           # 时间表
   #   - cron: '0 19 * * *'              # 每天国际时间19点，北京时间凌晨3点执行(北京+8)
   push: # push 操作
@@ -14,8 +16,7 @@ on:
     #     - padavan/*                     # 监听Padavan目录下所有文件的push操作
     paths: # 路径
       - logs/k2.md # 监听logs目录下 k2.md 的push操作
-watch:                              # 监视操作
-    types: [started]                  # 点击 star 之后
+
 env:
   DEVICES: "PSG1218" # 设备名字数组
 jobs:
