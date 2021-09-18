@@ -1,5 +1,5 @@
 # GitHub Action 学习实例 - 自动编译 padavan 和 openWrt
-
+😃
 ## 前言
 
 - 目前本人手上只有这几个设备，所以只测试这几个
